@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodCost - Tính cost món ăn</title>
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  
+  <script>
+    // Cấu hình Firebase của bạn
+    const CFG = {
+      apiKey: "AIzaSyA0MFz67AkmIYHvUEsUft5j2UBNrxIt_p0",
+      authDomain: "foodcost-tracuu.firebaseapp.com",
+      projectId: "foodcost-tracuu",
+      storageBucket: "foodcost-tracuu.firebasestorage.app",
+      messagingSenderId: "76953408900",
+      appId: "1:76953408900:web:1d9fa3d60aab6a7eeff9d1",
+      measurementId: "G-CB61WE9QET"
+    };
+
+    // Mã User UID Admin của bạn
+    const ADMIN_UID = "K3iwU4IgTuVwpABKhK0xXUrQI1j1";
+
+    // Khởi tạo Firebase
+    firebase.initializeApp(CFG);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+  </script>
+</head>
+<body>
+  <h1>Ứng dụng Tra cứu & Tính Cost Món Ăn</h1>
+  <p>Hệ thống đã kết nối Firebase thành công!</p>
+</body>
+</html>
